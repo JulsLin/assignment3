@@ -12,6 +12,8 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 
 
 
+
+
 ## 1. Create a regular user
 
 To create a regular using here is the general syntax:
@@ -36,6 +38,10 @@ Now you can change from the root User to your User:
 
         su -l <user-name>
 
+
+
+
+
 ## 2. Prevent the root user from connecting to the server via SSH
 
        sudo cp -r /root/.ssh /home/<user-name>
@@ -48,6 +54,8 @@ Now test this out using:
 
         ssh -i path-to-your-key <user-name>@<ip-address>
     
+
+
 
 
 
