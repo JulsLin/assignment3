@@ -11,7 +11,7 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 4. Configure nginx to serve a sample website
 
 
-*********************************************************************
+
 ## 1. Create a regular user
 
 General syntax: 
@@ -34,7 +34,7 @@ FROM ROOT USER - User has bash as login shell:
 
         useradd -ms /bin/bash <user-name>
 
-*********************************************************************
+
 ## 2. Prevent the root user from connecting to the server via SSH
 
        sudo cp -r /root/.ssh /home/<user-name>
@@ -48,14 +48,13 @@ Now test this out using:
         ssh -i path-to-your-key <user-name>@<ip-address>
     
 
-*********************************************************************
 
 
 ## 3. Install nginx
 
         install apt nginx
 
-********************************************************************
+
 
 
 
