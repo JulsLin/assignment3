@@ -14,19 +14,19 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 *********************************************************************
 1. Create a regular user
 
-General syntax: 
+General syntax: <br>
     ```useradd [options] <user-name>```
 
-Give the user a password: 
+Give the user a password: <br>
     ```passwd <user-name> <user-password>```
 
-Now you can change from root to user: 
+Now you can change from root to user: <br>
     ```su -l <user-name>```
 
-Allow user to perform administrative tasks: 
+Allow user to perform administrative tasks: <br>
     ```usermod -aG sudo <user-name>```
 
-FROM ROOT USER - User has bash as login shell: 
+FROM ROOT USER - User has bash as login shell: <br>
     ```useradd -ms /bin/bash <user-name>```
 
 *********************************************************************
@@ -38,14 +38,14 @@ FROM ROOT USER - User has bash as login shell:
 
     ```sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
-Now test this out using:
+Now test this out using:<br>
 
     ```ssh -i path-to-your-key <user-name>@<ip-address>```
 
 *********************************************************************
 
 
-3. Install nginx
+3. Install nginx <br>
 
     ```install apt nginx```
 
