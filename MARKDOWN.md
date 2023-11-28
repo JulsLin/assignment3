@@ -9,11 +9,11 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 2. Prevent the root user from connecting to the server via SSH
 3. Install nginx
 4. Configure nginx to serve a sample website
-
-
-.
-
-
+    
+   
+    
+    
+    
 ## 1. Create a regular user
 
 To create a regular using here is the general syntax:
