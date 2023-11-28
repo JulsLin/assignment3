@@ -1,4 +1,4 @@
-﻿TUTORIAL
+# ﻿TUTORIAL
 
 Starting from a Fresh Debian 12 server on DigitalOcean
 
@@ -12,7 +12,7 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 
 
 *********************************************************************
-1. Create a regular user
+## 1. Create a regular user
 
 General syntax: 
 
@@ -35,7 +35,7 @@ FROM ROOT USER - User has bash as login shell:
         useradd -ms /bin/bash <user-name>
 
 *********************************************************************
-2. Prevent the root user from connecting to the server via SSH
+## 2. Prevent the root user from connecting to the server via SSH
 
        sudo cp -r /root/.ssh /home/<user-name>
 
@@ -51,7 +51,7 @@ Now test this out using:
 *********************************************************************
 
 
-3. Install nginx
+## 3. Install nginx
 
         install apt nginx
 
