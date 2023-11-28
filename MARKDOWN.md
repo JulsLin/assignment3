@@ -38,7 +38,7 @@ FROM ROOT USER - User has bash as login shell: <br>
 
     ```sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh```
 
-Now test this out using:<br>
+Now test this out using:
 
     ```ssh -i path-to-your-key <user-name>@<ip-address>```
 
