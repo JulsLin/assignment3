@@ -11,7 +11,7 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 4. Configure nginx to serve a sample website
 
 
-
+.
 
 
 ## 1. Create a regular user
@@ -38,7 +38,7 @@ Now you can change from the root User to your User:
 
         su -l <user-name>
 
-
+.
 
 
 
@@ -55,7 +55,7 @@ Now test this out using:
         ssh -i path-to-your-key <user-name>@<ip-address>
     
 
-
+.
 
 
 
