@@ -14,26 +14,27 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 
 ## 1. Create a regular user
 
-General syntax: 
+To create a regular using here is the general syntax:
 
         useradd [options] <user-name>
 
-Give the user a password:
+Now give your User a password, make sure to enter a strong password! 
+*Note: Nothing will appear no the screen when you are entering the password but it is still being recorded. 
 
         passwd <user-name> <user-password>
 
-Now you can change from root to user: 
 
-        su -l <user-name>
-
-Allow user to perform administrative tasks: 
+Using the command below, it will allow you to perform administrative tasks from your User account 
 
         usermod -aG sudo <user-name>
 
-FROM ROOT USER - User has bash as login shell: 
+Now enter this command so your User has bash as login shell: 
 
         useradd -ms /bin/bash <user-name>
+        
+Now you can change from the root User to your User: 
 
+        su -l <user-name>
 
 ## 2. Prevent the root user from connecting to the server via SSH
 
