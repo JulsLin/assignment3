@@ -15,39 +15,39 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 1. Create a regular user
 
 General syntax: <br>
-    ```useradd [options] <user-name>```
+    `useradd [options] <user-name>`
 
 Give the user a password: <br>
-    ```passwd <user-name> <user-password>```
+    `passwd <user-name> <user-password>`
 
 Now you can change from root to user: <br>
-    ```su -l <user-name>```
+    `su -l <user-name>`
 
 Allow user to perform administrative tasks: <br>
-    ```usermod -aG sudo <user-name>```
+    `usermod -aG sudo <user-name>`
 
 FROM ROOT USER - User has bash as login shell: <br>
-    ```useradd -ms /bin/bash <user-name>```
+    `useradd -ms /bin/bash <user-name>`
 
 *********************************************************************
 
 
 2. Prevent the root user from connecting to the server via SSH
 
-    sudo cp -r /root/.ssh /home/<user-name>
+    `sudo cp -r /root/.ssh /home/<user-name>`
 
-    sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh
+    `sudo chown -R <user-name>:<user-group> /home/<user-name>/.ssh`
 
 Now test this out using:
 
-    ssh -i path-to-your-key <user-name>@<ip-address>
+    `ssh -i path-to-your-key <user-name>@<ip-address>`
 
 *********************************************************************
 
 
 3. Install nginx <br>
 
-    ```install apt nginx```
+    `install apt nginx`
 
 ********************************************************************
 
