@@ -20,6 +20,8 @@ To create a regular using here is the general syntax:
 
         useradd [options] <user-name>
 
+Please refer to `man useradd` to get more information
+
 Now give your User a password, make sure to enter a strong password! 
 *Note: Nothing will appear no the screen when you are entering the password but it is still being recorded. 
 
