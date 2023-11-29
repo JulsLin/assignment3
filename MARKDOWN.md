@@ -1,17 +1,6 @@
 # ﻿TUTORIAL
 
-Starting from a Fresh Debian 12 server on DigitalOcean
 
-1. Create a new regular user:
-    - User can perform administrative tasks
-    - User has bash as login shell
-    - User can access the server via SSH
-2. Prevent the root user from connecting to the server via SSH
-3. Install nginx
-4. Configure nginx to serve a sample website
-    
-   
----
     
     
 ## 1. How to create a regular user
