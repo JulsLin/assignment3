@@ -11,10 +11,10 @@ Starting from a Fresh Debian 12 server on DigitalOcean
 4. Configure nginx to serve a sample website
     
    
+---
     
     
-    
-## 1. Create a regular user
+## 1. How to create a regular user
 
 To create a regular using here is the general syntax:
 
@@ -38,8 +38,8 @@ Now you can change from the root User to your User:
 
         su -l <user-name>
 
-.
 
+---
 
 
 ## 2. Prevent the root user from connecting to the server via SSH
@@ -55,7 +55,7 @@ Now test this out using:
         ssh -i path-to-your-key <user-name>@<ip-address>
     
 
-.
+---
 
 
 
@@ -65,6 +65,9 @@ Now test this out using:
 
 
 
+---
 
+
+## 4. Configure nginx serve a sample website
 
 
